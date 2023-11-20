@@ -30,7 +30,7 @@ const Home = () => {
           </button>
         </div>
         <img
-          src="https://www.wallpaperflare.com/baked-cake-and-balloons-birthday-colorful-happy-birthday-celebration-wallpaper-sewxe"
+          src="https://res.cloudinary.com/raghu11221/image/upload/v1698431145/celebration-party-concept-hopeful-dreamy-woman-making-wish-birthday-cake-cross-fingers-smiling-happy-standing-white-background_izdeav.jpg"
           alt="dresses to be noticed"
           className="home-desktop-img"
         />
