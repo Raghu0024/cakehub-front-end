@@ -22,27 +22,27 @@ class LoginForm extends Component {
     this.setState({showSubmitError: true, errorMsg})
   }
 
-  submitForm = async event => {
-    event.preventDefault()
-    const {username, password} = this.state
-    const userDetails = {username, password}
-    const url = 'http://127.0.0.1:8000/api/login/'  //login Api URL
-    const options = {
-      method: 'POST',
-      body: JSON.stringify(userDetails),
-      headers: {
-        'Content-Type': 'application/json'
-      },
-    }
-    const response = await fetch(url, options)
-    const data = await response.json()
-    console.log(data)
-    if (response.ok === true) {
-      this.onSubmitSuccess(data.jwt_token)
-    } else {
-      this.onSubmitFailure(data.error_msg)
-    }
-  }
+  // submitForm = async event => {
+  //   event.preventDefault()
+  //   const {username, password} = this.state
+  //   const userDetails = {username, password}
+  //   const url = 'http://127.0.0.1:8000/api/login/'  //login Api URL
+  //   const options = {
+  //     method: 'POST',
+  //     body: JSON.stringify(userDetails),
+  //     headers: {
+  //       'Content-Type': 'application/json'
+  //     },
+  //   }
+  //   const response = await fetch(url, options)
+  //   const data = await response.json()
+  //   console.log(data)
+  //   if (response.ok === true) {
+  //     this.onSubmitSuccess(data.jwt_token)
+  //   } else {
+  //     this.onSubmitFailure(data.error_msg)
+  //   }
+  // }
 
   onChangeUsername = event => {
     this.setState({username: event.target.value})
