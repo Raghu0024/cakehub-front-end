@@ -11,14 +11,14 @@ const Products = () => {
   return (
     <>
       <Header />
-      <div className="container text-center">
+      <div className="container">
         <div className="row">
           <div className="col-sm-4">
             <div className="card" style={{ width: '18rem' }}>
               <a href="#">
                 <img
                   src="https://img.freepik.com/free-photo/high-angle-cake-with-flowers-plate_23-2149455735.jpg?size=626&ext=jpg&ga=GA1.1.939676640.1694439069&semt=ais"
-                  className="card-img-top position-relative"
+                  className="card-img-top position-relative hover-zoom"
                   alt="blackcurrent"
                   height="200px"
                 />
@@ -46,24 +46,18 @@ const Products = () => {
                     changeRating={(newRating) => setRatingValue(newRating)}
                     numberOfStars={5}
                     name="rating"
-                    starDimension="20px"
-                    starSpacing="2px"
+                    starDimension="15px"
+                    starSpacing="1px"
                   />
                 </p>
-                <h5 className="card-title">Blackcurrent <span>|</span>&nbsp;<span>cost:$12</span></h5>
+                <h5 className="card-title">Blackcurrent </h5>
                 <p className="card-text">
                   This is the favorite cake of many people
                 </p>
 
-                <div className="row">
-                  <div className='col'>
-                  <button className="btn btn-primary rounded-pill w-30 text-white">Add to cart </button>
-                  </div>
-                  <div className='col'>
-                  <button className="btn btn-info rounded-pill w-30 text-white">Buy Now</button>
-                 </div>
-                
-                </div>
+                <div class="button ">
+        <a href='' class="btn btn-primary">$115</a><a class="cart-btn btn btn-primary" href="#"><i class="cart-icon ion-bag"></i>ADD TO CART</a>
+      </div>
               </div>
             </div>
           </div>
