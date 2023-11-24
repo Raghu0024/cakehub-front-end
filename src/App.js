@@ -5,8 +5,8 @@ import Home from './components/Home'
 import Products from './components/Products'
 import Cart from './components/Cart'
 import NotFound from './components/NotFound'
-
 import './App.css'
+import ProductDetails from './components/ProductDetails/product_details'
 
 const App = () => (
   <BrowserRouter>
@@ -15,6 +15,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route exact path="/products" component={Products} />
       <Route exact path="/cart" component={Cart} />
+     <Route exact path="/product_details" component={ProductDetails} />
       <Route component={NotFound} />
     </Switch>
   </BrowserRouter>

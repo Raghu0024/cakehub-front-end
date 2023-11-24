@@ -2,9 +2,7 @@
   box-sizing: border-box;
 }
 .card{
-  width:400px;
  overflow: hidden;
- 
  border-radius: 20px;
 }
 .card:hover{
