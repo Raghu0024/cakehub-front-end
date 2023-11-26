@@ -7,6 +7,7 @@ import Cart from './components/Cart'
 import NotFound from './components/NotFound'
 import './App.css'
 import ProductDetails from './components/ProductDetails/product_details'
+import RegisterForm from './components/RegisterForm'
 
 const App = () => (
   <BrowserRouter>
@@ -15,6 +16,7 @@ const App = () => (
       <Route exact path="/" component={Home} />
       <Route exact path="/products" component={Products} />
       <Route exact path="/cart" component={Cart} />
+      <Route exact path='/register' component={RegisterForm} />
      <Route exact path="/product_details" component={ProductDetails} />
       <Route component={NotFound} />
     </Switch>
