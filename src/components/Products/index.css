@@ -14,8 +14,7 @@ border-radius: 20px;
 
 
 .card-body:hover{
-  background-color: rgb(76, 8, 106);
-  color: white;
+  color: deeppink;
 }
 /* index.css */
 
