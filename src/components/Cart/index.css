@@ -1,11 +1,21 @@
-.cart-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
+
+  .saveforlater,
+  .remove {
+    color: aliceblue;
+    background: linear-gradient(to right, rgb(232, 105, 173), rgb(150, 150, 226));
+    padding: 10px;
+    text-decoration: none;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 15px;
   }
-  .cart-img {
-    width: 150px;
+  .remove{
+    background: linear-gradient(to right, rgb(150, 150, 226),  rgb(232, 105, 173));
   }
-  
+  .padtop{
+    padding-top: 35px;
+
+  }
+  .fixedit{
+    position: fixed;
+  }

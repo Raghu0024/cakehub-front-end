@@ -63,7 +63,7 @@ const Products = () => {
                   </p>
                 
                   <div className="button">
-                    <a className="cart-btn btn btn-primary" href="#">
+                    <a className="cart-btn btn btn-primary" href="/cart">
                       <i className="cart-icon ion-bag"></i>ADD TO CART
                     </a>
                   </div>
