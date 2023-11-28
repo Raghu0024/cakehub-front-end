@@ -30,14 +30,17 @@
     border-radius: .5rem;
     box-shadow: 0 0 1rem 0 rgba(0 0 0 / .2);
    }
-  
+
+@media (max-width: 767px) {
+  .wrapper .form-containers {
+    box-shadow: none;
+  }
+}
    .wrapper .form-containers form .form-group{
     position: relative;
     width:20rem;
     margin:1.5rem 0;
-    border: 1px solid rgb(178, 88, 222);
-  
-  
+
   }
    .wrapper .form-containers form .form-group i,
    .wrapper .form-containers form .form-group  label{
@@ -50,6 +53,7 @@
   padding:0 .5rem;
   pointer-events: none;
   transition: all .5s ease;
+
    }
   .wrapper .form-containers form .form-group i{
   left: .5rem;
@@ -57,6 +61,7 @@
   }
   .wrapper .form-containers form .form-group label{
   left: 2.5rem;
+
   }
   .wrapper .form-containers form .form-group input{
     width: 100%;
@@ -66,6 +71,8 @@
     outline:none;
     font-size: 1.6rem;
     color: var(--labelColor);
+    border: 1px solid purple;
+    border-radius: 5px;
   }
   form .form-group input:focus~label,
   form .form-group input:valid~label,

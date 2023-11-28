@@ -30,12 +30,17 @@
   border-radius: .5rem;
   box-shadow: 0 0 1rem 0 rgba(0 0 0 / .2);
  }
+/* Remove box shadow for phone view */
+@media (max-width: 767px) {
+  .wrapper .form-container {
+    box-shadow: none;
+  }
+}
 
  .wrapper .form-container form .form-group{
   position: relative;
   width:20rem;
   margin:3rem 0;
-  border: 1px solid rgb(178, 88, 222);
 
 }
  .wrapper .form-container form .form-group i,
@@ -65,6 +70,8 @@ left: 2.5rem;
   outline:none;
   font-size: 1.6rem;
   color: var(--labelColor);
+  border: 1px solid purple;
+  border-radius: 5px;
 }
 form .form-group input:focus~label,
 form .form-group input:valid~label,
